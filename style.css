@@ -1,0 +1,410 @@
+/* Reset *,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  width: 100%;
+  min-height: 100vh;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: clamp(0.9rem, 1.5vw, 1.4rem);
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+h2 {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+}
+
+h3 {
+  font-size: clamp(1.4rem, 3.2vw, 2rem);
+}
+
+p {
+  font-size: clamp(0.95rem, 1.5vw, 1.5rem);
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+header {
+  max-width: 100%;
+  padding: 15px;
+  border-bottom: 2px solid gray;
+  position: sticky;
+  top: 1px;
+  z-index: 50;
+  background-color: #fff;
+}
+
+header ul {
+  display: flex;
+  gap: 15px;
+  font-weight: bolder;
+  font-size: 1.25rem;
+}
+
+header ul li a {
+  color: lightblue;
+}
+
+header ul li:hover a {
+  transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  color: black;
+}
+
+#heroSection {
+  background-color: lightblue;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: 2px solid gray;
+}
+
+.heroSection__headings h2 {
+  color: rgb(129, 125, 125);
+}
+
+#blogPostsSection {
+  display: flex;
+  justify-content: center;
+}
+
+.blogPostsSection__cardContainer {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  gap: 7px;
+}
+
+.postCard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.postCard__heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.postCard__heading h3 {
+  color: #333;
+}
+
+.postCard__heading h4 {
+  color: rgb(189, 181, 181);
+  font-size: 1.25rem;
+}
+
+.postCard__paragraph {
+  color: rgb(83, 82, 82);
+}
+
+.postCard__status {
+  padding: 15px;
+  border: 1px solid rgb(189, 181, 181);
+  display: flex;
+  gap: 17.5px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.postCard__status a {
+  color: rgb(109, 184, 209);
+} */
+
+/* Reset */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: clamp(0.9rem, 1.5vw, 1.4rem);
+  color: lightblue;
+}
+
+a:hover {
+  color: darkblue;
+  transition: color 0.3s ease;
+}
+
+/* Headings */
+h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: #222;
+}
+
+h2 {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  color: #555;
+}
+
+h3 {
+  font-size: clamp(1.4rem, 3.2vw, 2rem);
+  color: #333;
+}
+
+p {
+  font-size: clamp(0.95rem, 1.5vw, 1.5rem);
+  color: #444;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+/* Header */
+header {
+  max-width: 100%;
+  padding: 15px;
+  border-bottom: 2px solid gray;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: #fff;
+}
+
+header ul {
+  display: flex;
+  gap: 15px;
+  font-weight: bolder;
+  font-size: 1.25rem;
+}
+
+header ul li a {
+  color: lightblue;
+}
+
+header ul li:hover a {
+  color: black;
+}
+
+/* Hero Section */
+#heroSection {
+  background-color: lightblue;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: 2px solid gray;
+}
+
+.heroSection__headings h2 {
+  color: rgb(129, 125, 125);
+}
+
+/* Blog Posts Section */
+#blogPostsSection {
+  display: flex;
+  justify-content: center;
+}
+
+.blogPostsSection__cardContainer {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  gap: 7px;
+}
+
+/* Post Card */
+.postCard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: box-shadow 0.3s ease;
+}
+
+.postCard:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.postCard__heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.postCard__heading h3 {
+  color: #333;
+}
+
+.postCard__heading h4 {
+  color: rgb(189, 181, 181);
+  font-size: 1.25rem;
+}
+
+.postCard__paragraph {
+  color: rgb(83, 82, 82);
+}
+
+.postCard__status {
+  padding: 10px;
+  border: 1px solid rgb(189, 181, 181);
+  display: flex;
+  gap: 17.5px;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+.postCard__status a {
+  color: rgb(109, 184, 209);
+}
+
+/* About Section */
+#aboutContent {
+  padding: 20px;
+  text-align: center;
+}
+
+.aboutContent__text p {
+  max-width: 75%;
+  margin: 0 auto;
+  color: #444;
+  line-height: 1.8;
+}
+
+/* Contact Form Section */
+#contactFormSection {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.contactFormSection__form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.contactFormSection__form label {
+  font-weight: bold;
+  color: #333;
+}
+
+.contactFormSection__form input,
+.contactFormSection__form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contactFormSection__form button {
+  padding: 10px 20px;
+  background-color: lightblue;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contactFormSection__form button:hover {
+  background-color: darkblue;
+  transition: background-color 0.3s ease;
+}
+
+/* Services Section */
+#servicesSection {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.servicesSection__cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.serviceCard {
+  flex: 1;
+  max-width: 300px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.serviceCard:hover {
+  transform: translateY(-5px);
+}
+
+.serviceCard__heading h3 {
+  color: #222;
+}
+
+.serviceCard__paragraph p {
+  color: #444;
+  line-height: 1.8;
+}
